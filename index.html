@@ -1,4 +1,53 @@
 <!DOCTYPE html>
+</head>
+<style>
+    .row{
+        margin-top:40px;
+    }
+    .left-column{
+        float:left;
+        width:30%;
+        margin-left:30px;
+    }
+    .center-column{
+        width:30%;
+        margin:auto;
+    }
+    .right-column{
+        float:right;
+        width:30%;
+        margin:auto;
+    }
+    .image-container{
+        display: table-cell;
+        vertical-align: middle;
+        margin: auto;
+    }
+</style>
+
 <body>
-    Hello
+    <div class="row">
+        <div class="image-container"><img id="f1" src="family1.png" height="200" width="200"/></div>
+        <div class="image-container"><img id="s1" src="siblings1.png" height="200" width="200"/></div>
+        <div class="image-container"><img id="c1" src="comfort1.png" height="200" width="200"/></div>
+    </div>
+
+    <div class="row">
+        <div class="image-container"><img id="dr1" src="decor1.png" height="200" width="200"/></div>
+        <div class="image-container"><img id="dy1" src="diary1.png" height="200" width="200"/></div>
+        <div class="image-container"><img id="l1" src="lazy1.png" height="200" width="200"/></div>
+        </div>
+
+    <div class="row">
+        <div class="image-container"><img id="hm1" src="homemade1.png" height="200" width="200"/></div>
+        <div class="image-container"><img id="r1" src="routine1.png" height="200" width="200"/></div>
+        <div class="image-container"><img id="hs1" src="homesick1.png" height="200" width="200"/></div>
 </body>
+
+<script>
+    const f1 = document.getElementById ('f1')
+    const f1_audio = new Audio ('coin.wav')
+    f1.onpointerdown = () => f1_audio.play ()
+</script>
+
+</html>
